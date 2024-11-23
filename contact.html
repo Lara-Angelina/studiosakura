@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Contato | Studio Sakura Animation</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Videograph Template">
+    <meta name="keywords" content="Videograph, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="icon" type="image/icon" href="img/Animation_20241025_223726_0000-copia.png">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+
+    <script language="javascript" type="text/javascript">
+        function validar() {
+            var nome = contato.nome.value;
+            var email = contato.email.value;
+            var nota = contato.nota.value;
+            if (nome == "") {
+                alert('Preencha o campo com seu nome!');
+                contato.nome.focus();
+                return false;
+            }
+            if (email == "") {
+                alert('Preencha o campo com seu email!');
+                contato.email.focus();
+                return false;
+            }
+            if (nota == "") {
+                alert('Dê sua nota!');
+                contato.nota.focus();
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="./index.html"><img
+                                src="img/Studio_Sakura_20241025_221744_0000-removebg-preview-copia.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="header__nav__option">
+                        <nav class="header__nav__menu mobile-menu">
+                            <ul>
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="./about.html">Sobre</a></li>
+                                <li><a href="./portfolio.html">Animações</a></li>
+                                <li><a href="./services.html">Serviços</a></li>
+                                <li><a href="./eventos.html">Eventos</a></li>
+                                <li class="active"><a href="./contact.html">Contato</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header__nav__social">
+                            <a href="https://pt-br.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <a href="https://x.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+                            <a href="https://dribbble.com/" target="_blank"><i class="fa fa-dribbble"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-option spad set-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Contato</h2>
+                        <div class="breadcrumb__links">
+                            <a href="#">Home</a>
+                            <span>Contato</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <!-- Call To Action Section Begin -->
+    <section class="contact spad">
+        <div class="container">
+            <div class="row">
+                <!-- Coluna do Formulário -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="contact__form">
+                        <form name="contato" action="confirmacaocontato.html" method="get">
+                            <input type="text" id="nome" name="nome" placeholder="Nome">
+                            <input type="text" id="email" name="email" placeholder="Email">
+                            <select id="nota" name="nota">
+                                <option value disabled selected>Feedback</option>
+                                <option value="1">★☆☆☆☆</option>
+                                <option value="2">★★☆☆☆</option>
+                                <option value="3">★★★☆☆</option>
+                                <option value="4">★★★★☆</option>
+                                <option value="5">★★★★★</option>
+                            </select>
+                            <textarea placeholder="Mensagem"></textarea>
+                            <button type="submit" class="site-btn" onclick="return validar()">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+    
+                <!-- Coluna da Imagem -->
+                <div class="col-lg-6 col-md-6 contact__image">
+                    <img src="img/Animation.png" alt="Studio Sakura" />
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Call To Action Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="row2">
+
+                    <div class="footer__top__logo">
+                        <a href="index.html"><img src="img/Studio Sakura_20241025_221744_0000-copia.png" alt=""></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <p class="footer__copyright__text">Lara Angelina 2024 - &copyTodos os direitos
+                            reservados<br>Trabalho acadêmico sem fins lucrativos
+                        </p>
+                        <div align="right"> <a href="#"> <img src="img/Animation.png" width="5%"></a></div>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- Footer Section End -->
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
